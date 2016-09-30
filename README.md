@@ -2,6 +2,7 @@
 Raspberry Pi &amp; SSD1306 OLED project
 
 This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED display to display the current weather and train times for selected locations.
+<img src="weather.jpg">
 
 <h2>Hardware</h2>
 Coming soon
