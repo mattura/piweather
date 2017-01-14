@@ -13,9 +13,8 @@ Make sure python 2, pip and git are installed, and install the very handy Darwin
 <code>pip install nre-darwin-py</code><br/>
 <p>There are some prerequisites, git clone and install:
 <ul>
-<li>Adafruit_GPIO.SPI</li>
-<li>wiringPi</li>
-<li>wiringPi2-Python</li>
+<li><a href="https://github.com/adafruit/Adafruit_Python_SSD1306.git">Adafruit_Python_SSD1306</a> (library to draw text and shapes on the SSD1306 OLED)</li>
+<li><a href="https://github.com/Gadgetoid/WiringPi2-Python.git">wiringPi2-Python</a> (follow these instructions to install wiringPi)</li>
 </ul>
 </p>
 Then clone this repository to your pi:<br/>
