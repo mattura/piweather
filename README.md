@@ -1,7 +1,7 @@
 # piweather
 Raspberry Pi &amp; SSD1306 OLED project
 
-This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED display to display the current weather and train times for selected locations.
+This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED display to display the current weather and train times for selected locations. Optionally, add a rotary encoder and add your own menus!
 <img src="weather.jpg">
 
 <h2>Hardware</h2>
@@ -11,6 +11,13 @@ Coming soon
 <p>Prepare your Pi if possible by using a fresh installation of the <a href="https://www.raspberrypi.org/downloads/raspbian/">latest Raspbian</a>.
 Make sure python 2, pip and git are installed, and install the very handy Darwin SOAP client provided by <a href="https://github.com/robert-b-clarke/nre-darwin-py">Robert Clark</a>:<br/>
 <code>pip install nre-darwin-py</code><br/>
+<p>There are some prerequisites, git clone and install:
+<ul>
+<li>Adafruit_GPIO.SPI</li>
+<li>wiringPi</li>
+<li>wiringPi2-Python</li>
+</ul>
+</p>
 Then clone this repository to your pi:<br/>
 <code>git clone https://github.com/mattura/piweather</code><br/>
 </p>
