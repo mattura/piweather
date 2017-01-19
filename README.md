@@ -5,10 +5,24 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 <img src="weather.jpg">
 
 <h2>Hardware</h2>
-Coming soon
+<ul>
+<li>Raspberry Pi</li>
+<li>Compatible USB WiFi dongle</li>
+<li>SD Card (at least 8GB)</li>
+<li>Power supply</li>
+<li>SSD1306 OLED Display</li>
+<li>Jumper wires (7-10)</li>
+<li>(optional) Rotary encoder, soldering iron, wire, solder-sucker</li>
+<li>(temporarily) Screen + HDMI cable + keyboard (setup directly) OR ethernet cable + router + computer (setup via SSH)</li>
+</ul>
 
 <h2>Software</h2>
-<p>Prepare your Pi if possible by using a fresh installation of the <a href="https://www.raspberrypi.org/downloads/raspbian/">latest Raspbian</a>.
+<p>Prepare your Pi if possible by using a fresh installation of the <a href="https://www.raspberrypi.org/downloads/raspbian/">latest Raspbian</a>. Burn this to your SD card and connect to your Pi using one of the following methods:</p>
+<b>A.</b> Connect up your ethernet cable between your Pi and router and log in to your Pi using SSH (<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> on Windows). If you can connect using avahi/Bonjour, the address you need is <b>raspberrypi.local</b>, otherwise find the Pi's IP address by logging in to your router.<br/>
+<b>B.</b> Connect keyboard and monitor to your Pi<br/>
+The default login username is "pi" and the password is "raspberry". You can change this using the setup menu or <b>passwd</b> command.</p>
+
+<p>
 Make sure python 2, pip and git are installed, and install the very handy Darwin SOAP client provided by <a href="https://github.com/robert-b-clarke/nre-darwin-py">Robert Clark</a>:<br/>
 <code>pip install nre-darwin-py</code><br/>
 <p>There are some prerequisites to install:
