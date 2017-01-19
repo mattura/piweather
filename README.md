@@ -24,6 +24,8 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 
 <p>The default login username is <b>pi</b> and the password is <b>raspberry</b>. You can change this using the setup menu or <b>passwd</b> command.</p>
 
+<p>Run <code>sudo raspi-config</code> to set up your Pi. Go through options 1-4 in turn, and it is considered safe to overclock a little (I used the Medium setting, but whatever works for you). In the Advanced options (7), enable SSH, SLI and I2C. Reboot and then update the pi: <code>sudo apt-get update && sudo apt-get upgrade</code></p>
+
 <p>Make sure python 2, pip and git are installed, and install the very handy Darwin SOAP client provided by <a href="https://github.com/robert-b-clarke/nre-darwin-py">Robert Clark</a>:<br/>
 <code>pip install nre-darwin-py</code></p>
 
