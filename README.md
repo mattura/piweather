@@ -19,8 +19,9 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 <h2>Software</h2>
 <p>Prepare your Pi if possible by using a fresh installation of the <a href="https://www.raspberrypi.org/downloads/raspbian/">latest Raspbian</a>. Burn this to your SD card and connect to your Pi using one of the following methods:</p>
 <b>A.</b> Connect up your ethernet cable between your Pi and router and log in to your Pi using SSH (<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> on Windows). If you can connect using avahi/Bonjour, the address you need is <b>raspberrypi.local</b>, otherwise find the Pi's IP address by logging in to your router.<br/>
+NOTE: You will first need to place a blank file <b>ssh</b> on the /boot/ partition in order to enable SSH!<br/>
 <b>B.</b> Connect keyboard and monitor to your Pi<br/>
-The default login username is "pi" and the password is "raspberry". You can change this using the setup menu or <b>passwd</b> command.</p>
+The default login username is <b>pi<b/> and the password is <b>raspberry</b>. You can change this using the setup menu or <b>passwd</b> command.</p>
 
 <p>
 Make sure python 2, pip and git are installed, and install the very handy Darwin SOAP client provided by <a href="https://github.com/robert-b-clarke/nre-darwin-py">Robert Clark</a>:<br/>
