@@ -22,7 +22,7 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 <b>NOTE</b>: You will first need to place a blank file <b>ssh</b> on the /boot/ partition in order to enable SSH!<br/> This is a new security measure in builds released since November 2016.
 <b>B.</b> Connect keyboard and monitor to your Pi.</p>
 
-<p>The default login username is <b>pi</b> and the password is <b>raspberry</b>. You can change this using the setup menu or <b>passwd</b> command.</p>
+<p>The default login username is <b>pi</b> and the password is <b>raspberry</b>. You can change this in the next step or by using the <b>passwd</b> command.</p>
 
 <p>Run <code>sudo raspi-config</code> to set up your Pi. Go through options 1-4 in turn, and it is considered safe to overclock a little (I used the Medium setting, but whatever works for you). In the Advanced options (7), enable SSH, SLI and I2C. Reboot and then update the pi: <code>sudo apt-get update && sudo apt-get upgrade</code></p>
 
