@@ -19,9 +19,9 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 <h2>Software</h2>
 <h4>Initial setup:</h4>
 <p>Prepare your Pi if possible by using a fresh installation of the <a href="https://www.raspberrypi.org/downloads/raspbian/">latest Raspbian</a>. Burn this to your SD card and connect to your Pi using one of the following methods:</p>
-<b>A.</b> Connect up your ethernet cable between your Pi and router and log in to your Pi using SSH (<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> on Windows). If you can connect using avahi/Bonjour, the address you need is <b>raspberrypi.local</b>, otherwise find the Pi's IP address by logging in to your router.<br/>
-<b>NOTE</b>: You will first need to place a blank file <b>ssh</b> on the /boot/ partition in order to enable SSH!<br/> This is a new security measure in builds released since November 2016.
-<b>B.</b> Connect keyboard and monitor to your Pi.</p>
+<p><b>A.</b> Connect up your ethernet cable between your Pi and router and log in to your Pi using SSH (<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> on Windows). If you can connect using avahi/Bonjour, the address you need is <b>raspberrypi.local</b>, otherwise find the Pi's IP address by logging in to your router.<br/>
+<b>NOTE</b>: You will first need to place a blank file <b>ssh</b> on the /boot/ partition in order to enable SSH!<br/> This is a new security measure in builds released since November 2016.</p>
+<p><b>B.</b> Connect keyboard and monitor to your Pi.</p>
 
 <p>The default login username is <b>pi</b> and the password is <b>raspberry</b>. You can change this in the next step or by using the <b>passwd</b> command.</p>
 
@@ -32,13 +32,13 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 </p>
 
 <h4>Prerequisites:</h4>
-<p>Make sure python 2, pip and git are installed, and install the very handy Darwin SOAP client provided by <a href="https://github.com/robert-b-clarke/nre-darwin-py">Robert Clark</a>:<br/>
-<code>pip install nre-darwin-py</code></p>
+</ul>
+<li>Pip: <code>wget https://bootstrap.pypa.io/get-pip.py</code>, then <code>sudo python get-pip.py</code></li>
+<li>Git: <code>sudo apt-get install git</code></li>
+<li>This very handy Darwin SOAP client provided by <a href="https://github.com/robert-b-clarke/nre-darwin-py">Robert Clark</a>: <code>sudo pip install nre-darwin-py</code></li>
+<li>This library by Adafruit which enables drawing text and shapes on the SSD1306 OLED: <code>git clone <a href="https://github.com/adafruit/Adafruit_Python_SSD1306.git">Adafruit_Python_SSD1306</a></code>, <code>cd Adafruit_Python_SSD1306/</code>, <code>sudo python ez_setup.py install</code></li>
 
-<p>There are some prerequisites to install:
-<ul>
 <li><a href="https://github.com/Gadgetoid/WiringPi2-Python.git">wiringPi2-Python</a> (follow the instructions in the link to install wiringPi)</li>
-<li><a href="https://github.com/adafruit/Adafruit_Python_SSD1306.git">Adafruit_Python_SSD1306</a> (library to draw text and shapes on the SSD1306 OLED)</li>
 </ul>
 </p>
 
