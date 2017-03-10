@@ -39,6 +39,9 @@ This project uses a Raspberry Pi B, a Wireless USB dongle and an SSD1306 OLED di
 <li>This library by Adafruit which enables drawing text and shapes on the SSD1306 OLED: <code>git clone <a href="https://github.com/adafruit/Adafruit_Python_SSD1306.git">Adafruit_Python_SSD1306</a></code>, <code>cd Adafruit_Python_SSD1306/</code>, <code>sudo python ez_setup.py install</code></li>
 
 <li><a href="https://github.com/Gadgetoid/WiringPi2-Python.git">wiringPi2-Python</a> (follow the instructions in the link to install wiringPi)</li>
+<li>sudo apt-get install python-dev</li>
+<li>sudo apt-get install python-PIL</li>
+<li>sudo pip install spidev</li>
 </ul>
 </p>
 
